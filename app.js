@@ -20,7 +20,7 @@ res.send("<h2>Welcome to Node JS express app</h2>"+appEnv.url+appEnv.port+port+p
 console.log(__dirname+"/images/mithunlogo.jpg");
 */
 app.get('/mithuntechnologies', function(request, response) {
-    //response.send("<h2><center>Welcome to Node JS app</h2>");
+    //response.send("<h2><center>Welcome to Node JS app with webhook</h2>");
     response.write("<h2><center><u>Node JS  Application </u></center></h2>");
 	
     response.write("<h2><center>Welcome to  Mithun Technologies. Please Contact +91-9980923226 for more information or send an email to devopstrainingblr@gmail.com <center></h2>" );
@@ -33,7 +33,7 @@ app.get('/mithuntechnologies', function(request, response) {
 app.get("/html", function(req,res){
     res.set("Content-Type","text/html");
     //res.contentType("html") ; 
-    res.write("<h2>Welcome to complete automation code</h2>");
+    res.write("<h2>Welcome to complete automation code with webhook</h2>");
     res.write("<h2>/html call</h2>");
     //must end 
     res.end();
@@ -44,7 +44,7 @@ app.get("/html", function(req,res){
         //res.type('application/json');
         //res.json({'name': 'Mithun Reddy L'});
         res.send({
-		'name': 'Mithun Technologies',
+		'name': 'Webhook trigger automatically',
 		'technology': 'DevOps',
 		'contact' : '9980923226',
 		'email': 'devopstrainingblr@gmail.com'
