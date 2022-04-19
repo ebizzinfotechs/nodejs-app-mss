@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 echo 'The following "npm" command runs your Node.js application'
 set -x
-npm start ./app.js
+npm start &
+./app.js
 sleep 1
 echo $! > .pidfile
 set +x
